@@ -16,6 +16,12 @@ function GISBHCtrl($scope, GISBHSvc){
      $scope.openprofile = function(){
         window.location = 'index-profile-gisbh.html';
     }
+
+    $scope.openikhwanTV = function(){
+        window.location = 'index-ikhwantv.html';
+    }
+
+
     
 }
 
