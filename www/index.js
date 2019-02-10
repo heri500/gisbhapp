@@ -61,4 +61,15 @@ jQuery(function ($) {
             window.location = 'index-main.html';
         });
     });
+
+     $('#btn-giibf').on('click', function(){
+        $('#logo-gisbh').addClass('fadeOut animated');
+        $('#btn-gisbh, #btn-giibf').addClass('fadeOut animated');
+        $('#text-logo').addClass('zoomOutUp animated');
+        const element =  document.querySelector('#text-logo');
+        element.addEventListener('animationend', function() {
+            window.location = 'index-giibf.html';
+        });
+    });
+     
 });
