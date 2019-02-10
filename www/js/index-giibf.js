@@ -12,7 +12,12 @@ function GISBHCtrl($scope, GISBHSvc){
     $scope.openGalery = function(){
         window.location = 'index-giibf-galeri.html';
     }
-    
+    $scope.goBack = function(){
+        window.location = 'index.html';
+    }
+    $scope.goHome = function(){
+        window.location = 'index.html';
+    }
 }
 
 function GISBHSvc($http, $rootScope){

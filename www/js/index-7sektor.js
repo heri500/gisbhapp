@@ -27,6 +27,9 @@ function GISBHCtrl($scope, $uibModal,GISBHSvc){
     $scope.openHomePage = function(){
         window.location = 'index.html';
     }
+    $scope.openGiifPage = function(){
+        window.location = 'index-giibf.html';
+    }
 
     $scope.open = function(size, videoSource) {
     var modalInstance = $uibModal.open({
