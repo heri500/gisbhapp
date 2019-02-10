@@ -6,7 +6,7 @@ GISBHApp.controller('GISBHCtrl',['$scope', 'GISBHSvc', GISBHCtrl]);
 
 function GISBHCtrl($scope, GISBHSvc){
     $scope.openSyarikatPage = function(Idx){
-        window.location = 'index'+ Idx +'.html';
+        window.location = 'anaksyarikat'+ Idx +'.html';
     }
     $scope.goBackPage = function(){
         window.location = 'index-main.html';
