@@ -1,0 +1,8 @@
+/* Empty. Add your own CSS if you like */
+.title{
+    font-weight: bold !important;
+}
+.search-menu{
+    width: 100%;
+    border: 1px all #999;
+}

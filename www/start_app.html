@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="GISBHApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="js/jquery/jquery-ui.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/ng-cordova.min.js"></script>
+    <!--
+    <script src="js/ngStorage.min.js"></script>
+    -->
+    <script src="cordova.js"></script>
+    <script src="js/jquery/external/jquery/jquery.js"></script>
+    <script src="js/jquery/jquery-ui.js"></script>
+    <!-- your app's js -->
+
+    <!--Setup App-->
+    <link rel="stylesheet" href="index.css">
+    <script src="js/index-start.js"></script>
+</head>
+<body ng-controller="GISBHCtrl">
+<ion-pane>
+    <ion-content class="start-app">
+        <div class="row"><div class="col">&nbsp;</div></div>
+        <div class="row"><div class="col">&nbsp;</div></div>
+        <div class="row"><div class="col">&nbsp;</div></div>
+        <div class="row"><div class="col">&nbsp;</div></div>
+        <div class="row">
+            <div class="col">
+                <button class="button button-energized custom-btn" id="sektor1" color="primary">PEMBANGUNAN INSANIAH</button>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="button button-energized custom-btn" id="sektor2" color="primary" style="display: none;">PENDIDIKAN</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="button button-energized custom-btn" id="sektor3" color="primary" style="display: none;">PERKHIDMATAN</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="button button-energized custom-btn" id="sektor4" color="primary" style="display: none;">PERNIAGAAN</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="button button-energized custom-btn" id="sektor5" color="primary" style="display: none;">MEDIA</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="button button-energized custom-btn" id="sektor6" color="primary" style="display: none;">PENTERNAKAN & PERLADANGAN</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="button button-energized custom-btn" id="sektor7" color="primary" style="display: none;">PENTADBIRAN & PERHUBUNGAN</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-pane>
+</body>
+</html>

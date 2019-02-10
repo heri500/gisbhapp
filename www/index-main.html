@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="GISBHApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/ng-cordova.min.js"></script>
+    <!--0
+    <script src="js/ngStorage.min.js"></script>
+    -->
+    <script src="cordova.js"></script>
+    <script src="js/jquery/external/jquery/jquery.js"></script>
+    <!-- your app's js -->
+
+    <!--Setup App-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/index-main.js"></script>
+</head>
+<body ng-controller="GISBHCtrl">
+<ion-pane>
+    <div id="screensaver-place" class="screensaver-back" ng-click="screensaverOff()"></div>
+    <ion-content class="start-back">
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div align="center" class="row tulisan-p3">
+            <img id="text-p3" src="img/teks-p3.png" style="display: none;">
+        </div>
+        <div id="button-place" class="button-sektor">
+            <div class="row">
+                <div class="col right-side">
+                    <div>
+                        <img id="btn-menu-1" src="img/1.png" class="main-but-p3-1" style="display: none;" ng-click="openAlpPage()">
+                    </div>
+                    <div>
+                        <img id="btn-menu-2" src="img/2.png" class="main-but-p3-2" style="display: none;" ng-click="open7SektorPage()">
+                    </div>
+                    <div>
+                        <img id="btn-menu-3" src="img/3.png" class="main-but-p3-3" style="display: none;">
+                    </div>
+                </div>
+                <div>
+                    <img id="logo-gisbh" src="img/logo-p3.png" style="display: none;">
+                </div>
+                <div class="col left-side">
+                    <div>
+                        <img id="btn-menu-4" src="img/4.png" class="main-but-p3-4" style="display: none;">
+                    </div>
+                    <div>
+                        <img id="btn-menu-5" src="img/5.png" class="main-but-p3-5" style="display: none;">
+                    </div>
+                    <div>
+                        <img id="btn-menu-6" src="img/6.png" class="main-but-p3-6" style="display: none;" ng-click="openMapPage()">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-nav">
+            <div class="col" align="left">
+                <img id="back-p3" src="img/back.png" class="button-back" style="display: none;">
+            </div>
+            <div class="col" align="right">
+                <img id="home-p3" src="img/home.png" class="button-home" style="display: none;">
+            </div>
+        </div>
+    </ion-content>
+</ion-pane>
+</body>
+</html>

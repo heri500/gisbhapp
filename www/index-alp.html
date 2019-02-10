@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="GISBHApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/ng-cordova.min.js"></script>
+    <!--0
+    <script src="js/ngStorage.min.js"></script>
+    -->
+    <script src="cordova.js"></script>
+    <script src="js/jquery/external/jquery/jquery.js"></script>
+    <!-- your app's js -->
+
+    <!--Setup App-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/index-alp.js"></script>
+</head>
+<body ng-controller="GISBHCtrl">
+<ion-pane>
+    <div id="screensaver-place" class="screensaver-back" ng-click="screensaverOff()"></div>
+    <ion-content class="start-back">
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div align="center" class="row tulisan-p3">
+            <img id="text-alp" src="img/alp/teks.png">
+        </div>
+        <div id="button-place" class="button-alp">
+            <div class="row">
+                <div class="col right-side-alp">
+                    <div>
+                        <img id="img-plp" src="img/alp/plp.png" class="main-but" style="display: none;">
+                    </div>
+                </div>
+                <div>
+                    <img id="img-pe" src="img/alp/pe.png">
+                </div>
+                <div class="col left-side-alp">
+                    <div>
+                        <img id="img-ceo" src="img/alp/ceo.png" class="main-but" style="display: none;">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: -170px;">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col right-side-alp">
+                    <img id="img-tdpjohan" src="img/alp/tjohan.png" style="display: none;">
+                </div>
+                <div class="col right-side-alp">
+                    <img id="img-tdpazral" src="img/alp/tazral.png" style="display: none;">
+                </div>
+                <div class="col right-side-alp">
+                    <img id="img-tdphasnan" src="img/alp/thasnan.png" style="display: none;">
+                </div>
+                <div>
+                    <img id="img-tdpnik" src="img/alp/tnik.png" style="display: none;">
+                </div>
+                <div class="col left-side-alp">
+                    <img id="img-tdpanwar" src="img/alp/tanwar.png" style="display: none;">
+                </div>
+                <div class="col left-side-alp">
+                    <img id="img-tdpfadhil" src="img/alp/tfadhil.png" style="display: none;">
+                </div>
+                <div class="col left-side-alp">
+                    <img id="img-tdpcumat" src="img/alp/tcumat.png" style="display: none;">
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <div class="row footer-nav">
+            <div class="col" align="left">
+                <img id="back-p3" src="img/back.png" class="button-back" ng-click="openMainPage()">
+            </div>
+            <div class="col" align="right">
+                <img id="home-p3" src="img/home.png" class="button-home" ng-click="openHomePage()">
+            </div>
+        </div>
+    </ion-content>
+</ion-pane>
+</body>
+</html>
