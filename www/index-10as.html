@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="GISBHApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/ng-cordova.min.js"></script>
+    <!--0
+    <script src="js/ngStorage.min.js"></script>
+    -->
+    <script src="cordova.js"></script>
+    <script src="js/jquery/external/jquery/jquery.js"></script>
+    <!-- your app's js -->
+
+    <!--Setup App-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/index-10as.js"></script>
+    <script src="js/screensaver.js"></script>
+</head>
+<body ng-controller="GISBHCtrl">
+<ion-pane>
+    <div id="screensaver-place" class="screensaver-back" ng-click="screensaverOff()"></div>
+    <ion-content class="start-back">
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <img id="text-title" src="img/10as/teks.png">
+        </div>
+        <div id="button-place" class="button-10as">
+            <div class="row">
+                <div class="col right-side-alp">
+                    <img id="madah" src="img/10as/madah.png" style="display: none;">
+                </div>
+                <div class="col right-side">
+                    <div>
+                        <img id="syarikat1" src="img/10as/1.png" style="display: none;">
+                    </div>
+                    <div>
+                        <img id="syarikat2" src="img/10as/2.png" style="display: none;">
+                    </div>
+                    <div>
+                        <img id="syarikat3" src="img/10as/3.png" style="display: none;">
+                    </div>
+                    <div>
+                        <img id="syarikat4"src="img/10as/4.png" style="display: none;">
+                    </div>
+                    <div>
+                        <img id="syarikat5" src="img/10as/5.png" style="display: none;">
+                    </div>
+                </div>
+                <div>
+                    <img id="line-batas" src="img/10as/line.png" style="display: none;">
+                </div>
+                <div class="col left-side">
+                    <div>
+                        <img id="syarikat6" src="img/10as/6.png" style="display: none;">
+                    </div>
+                    <div>
+                        <img id="syarikat7" src="img/10as/7.png" style="display: none;">
+                    </div>
+                    <div>
+                        <img id="syarikat8" src="img/10as/8.png" style="display: none;">
+                    </div>
+                    <div>
+                        <img id="syarikat9" src="img/10as/9.png" style="display: none;">
+                    </div>
+                    <div>
+                        <img id="syarikat10" src="img/10as/10.png" style="display: none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-nav">
+            <div class="col" align="left">
+                <img id="back-p3" src="img/back.png" class="button-back" style="display: none;" ng-click="goBackPage()">
+            </div>
+            <div class="col" align="right">
+                <img id="home-p3" src="img/home.png" class="button-home" style="display: none;" ng-click="goHomePage()">
+            </div>
+        </div>
+    </ion-content>
+</ion-pane>
+</body>
+</html>

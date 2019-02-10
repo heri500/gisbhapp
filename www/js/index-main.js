@@ -14,6 +14,9 @@ function GISBHCtrl($scope, GISBHSvc){
     $scope.open7SektorPage = function(){
         window.location = 'index-7sektor.html';
     }
+    $scope.open10AsPage = function(){
+        window.location = 'index-10as.html';
+    }
 
     $scope.openProdukIkhwan = function(){
         window.location = 'index-produk-ikhwan.html';
@@ -25,7 +28,7 @@ function GISBHCtrl($scope, GISBHSvc){
 
 
 
-    
+
 }
 
 function GISBHSvc($http, $rootScope){

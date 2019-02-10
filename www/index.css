@@ -40,6 +40,12 @@
     width:100%;
     position:fixed;
 }
+.button-10as{
+    top: 25%;
+    left: 0;
+    width:100%;
+    position:fixed;
+}
 .button.custom-btn{
     width: 350px;
     font-size: 24px;
@@ -166,4 +172,7 @@
     top : 0;
     left: 0;
     position: absolute;
+}
+#madah{
+    margin-right: -150px;
 }

@@ -1,6 +1,6 @@
 var VideoScreensaver = '';
 jQuery(function ($) {
-    VideoScreensaver = '<video id="video-screensaver" loop controls="true" width="100%" height="100%" poster="img/screen-saver.png" muted preload autoplay >';
+    VideoScreensaver = '<video id="video-screensaver" loop controls="false" width="100%" height="100%" poster="img/screen-saver.png" muted preload autoplay >';
     VideoScreensaver += '<source src="img/screen-saver.mp4" type="video/mp4">';
     VideoScreensaver += '<source src="img/start-gisbh.ogg" type="video/ogg">';
     VideoScreensaver += '<source src="img/start-gisbh.webm" type="video/webm">';
