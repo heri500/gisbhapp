@@ -5,6 +5,12 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic', 'ngCordova'])
 
+.filter("trustUrl", ['$sce', function($sce) {
+  return function(recordingUrl) {
+    return $sce.trustAsResourceUrl(recordingUrl);
+  };
+}])
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {

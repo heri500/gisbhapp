@@ -16,6 +16,7 @@
       }
     </script>-->
 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
@@ -31,9 +32,12 @@
     <script src="js/ngStorage.min.js"></script>
     -->
     <script src="cordova.js"></script>
+    <script src="js/ui-bootstrap-tpls-1.0.3.js"></script> 
     <script src="js/jquery/external/jquery/jquery.js"></script>
     <script src="js/jquery/modal-video.min.js"></script>
     <script src="js/jquery/jquery-modal-video.min.js"></script>
+
+
   
     <!-- your app's js -->
 
@@ -52,7 +56,8 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide"><img src="img/7sektor/1.jpg"><img id="play-video-1" src="img/7sektor/play-video.png"></div>
+                        <div class="swiper-slide swiper-slide orange-slide swiper-slide-visible swiper-slide-active"><img src="img/7sektor/1.jpg"><img  class="perladangan" id="play-video-1" src="img/7sektor/play-video.png" ng-click="videoClickPertanian()">
+                        </div>
                         <div class="swiper-slide"><img src="img/7sektor/2.jpg"></div>
                         <div class="swiper-slide"><img src="img/7sektor/3.jpg"></div>
                         <div class="swiper-slide"><img src="img/7sektor/4.jpg"><img id="play-video-2" src="img/7sektor/play-video.png"></div>
@@ -80,8 +85,37 @@
                     <img id="home-p3" src="img/home.png" class="button-home" ng-click="openHomePage()">
                 </div>
             </div>
-            <div id="play-video-1-frame"></div>
+           
+            <script type="text/ng-template" id="myModal.html">
+        <div id="my-modal" click-outside="cancel()">
+          <div class="modal-header">
+            <h3 class="modal-title">{{title}}</h3>
+          </div>
+          <div class="modal-body">
+            <div class="media">
+              <video style="width:100%;height:100%;" controls autoplay ng-src="{{videoSource}}"></video>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Close</button>
+          </div>
+        </div>
+      </script>
+
         </ion-content>
     </ion-pane>
+    
+
 </body>
 </html>
+<style type="text/css">
+#play-video-1 {
+    position: absolute;
+    right: 140px;
+}
+.modal {
+      background-color: none;
+
+}
+
+</style>

@@ -21,6 +21,7 @@ GISBHApp.controller('ModalInstanceCtrl', function($scope, $uibModalInstance, vid
 GISBHApp.controller('GISBHCtrl',['$scope','$uibModal', 'GISBHSvc', GISBHCtrl]);
 
 function GISBHCtrl($scope, $uibModal,GISBHSvc){
+    
     $scope.openMainPage = function(){
         window.location = 'index-main.html';
     }
@@ -100,10 +101,8 @@ $(document).ready(function () {
             el: '.swiper-scrollbar',
             hide: true,
         },
-            speed: 400,
+        speed: 400,
         spaceBetween: 100,
-        preventClicks : false,
-        preventClicksPropagation : false,
         loop: true,
 
     });
