@@ -17,8 +17,6 @@ function GISBHSvc($http, $rootScope){
 
 }
 
-var VideoPertanian = '';
-
 $(document).ready(function () {
     VideoPertanian = '<video id="video-pertanian" loop controls="true" width="100%" height="100%" poster="img/screen-saver.png" muted preload autoplay >';
     VideoPertanian += '<source src="img/7sektor/video-pertanian.mp4" type="video/mp4">';
