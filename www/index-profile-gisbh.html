@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="GISBHApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/ng-cordova.min.js"></script>
+    <!--0
+    <script src="js/ngStorage.min.js"></script>
+    -->
+    <script src="cordova.js"></script>
+    <script src="js/jquery/external/jquery/jquery.js"></script>
+    <script src="js/ui-bootstrap-tpls-1.0.3.js"></script> 
+    
+    <!-- your app's js -->
+
+    <!--Setup App-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index-7sektor.js"></script>
+</head>
+<body ng-controller="GISBHCtrl">
+    <ion-pane>
+        <ion-content class="start-giibf">
+            <div class="row">
+                    <!-- Additional required wrapper -->
+                       
+                        <video id="video-screensaver" loop controls="true" width="100%" height="100%" poster="img/screen-saver.png" muted preload autoplay >
+                        <source src="img/profile/produk-ikhwan.mp4" type="video/mp4">
+                        <source src="img/start-gisbh.ogg" type="video/ogg">
+                        <source src="img/start-gisbh.webm" type="video/webm"></video>
+                        </div>
+
+                   
+            </div>
+            <div class="row footer-nav">
+                <div class="col" align="left">
+                    <img id="back-p3" src="img/back.png" class="button-back" ng-click="openMainPage()">
+                </div>
+                <div class="col" align="right">
+                    <img id="home-p3" src="img/home.png" class="button-home" ng-click="openHomePage()">
+                </div>
+            </div>
+            <div id="play-video-1-frame"></div>
+        </ion-content>
+    </ion-pane>
+</body>
+</html>

@@ -26,6 +26,11 @@ function GISBHCtrl($scope, GISBHSvc){
         window.location = 'index-infograph.html';
     }
 
+    $scope.openprofile = function(){
+        window.location = 'index-profile-gisbh.html';
+    }
+
+
 
 
 

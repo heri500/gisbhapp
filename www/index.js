@@ -12,6 +12,11 @@ function GISBHCtrl($scope, GISBHSvc){
     $scope.screensaverOff = function(){
         console.log(this);
     }
+
+     $scope.openprofile = function(){
+        window.location = 'index-profile-gisbh.html';
+    }
+    
 }
 
 function GISBHSvc($http, $rootScope){
